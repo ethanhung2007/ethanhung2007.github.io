@@ -29,7 +29,7 @@
     <section class="feature-head">
       <a class="back" href="index.html">← Projects</a>
       <h1 class="feature-title">SIMT GPU Core</h1>
-      <p class="lede todo" style="font-size: 20px">[One sentence: what it is and what it can run.]</p>
+      <p class="lede todo" style="font-size: 20px">SIMT GPU Streaming Multiprocessor based off of a custom ISA</p>
     </section>
 
     <section class="spec">
@@ -51,15 +51,15 @@
       <article class="article">
         <section id="problem">
           <h2><span class="num">01</span>The Problem</h2>
-          <p class="todo">[Why build a GPU from scratch, and what you wanted to understand. ~50 words]</p>
+          <p class="todo">I wanted to gain a more concrete understanding of how a SIMT architecture works and how parallelism is achieved on such an architecture.</p>
         </section>
         <section id="process">
           <h2><span class="num">02</span>The Process</h2>
-          <p class="todo">[The ISA, the pipeline, how warps are scheduled. ~80 words]</p>
+          <p class="todo">Knowing the complexity of modern day GPUs, I had to create a simplfied version of the ISAs with only the essential instructions. After understanding how I would implement the features from a high level understanding, I began building from the bottom up, starting with individual lanes. After the lanes, I built the warps and control logic. After I built each small part of the core, I would verify the basic functionality using Verilator. Lastly, I developed the fetch, decode, and scheduling blocks, finishing my GPU core.</p>
         </section>
         <section id="outcome">
           <h2><span class="num">03</span>The Outcome</h2>
-          <p class="todo">[What runs on it, how you verified it, what’s next. ~50 words]</p>
+          <p class="todo">My GPU was synthesized  on an Arty-A7-100T to 18.9K LUTs, 22.8K FFs, and 12 DSPs at 50 MHz. I then wrote 3 simple GPU kernels written in assembly that includes vector add, matrix multiply, and reduction. These GPU kernels would run on my GPU then verified against a golden reference model to ensure accuracy.</p>
         </section>
       </article>
     </section>
@@ -67,12 +67,6 @@
     <a class="next" href="ethernet-accelerator.html"><span>Next: Ethernet packet accelerator</span><span class="arrow">→</span></a>
   </main>
 
-  <footer class="site-footer">
-    <div>E. Hung · Atlanta, GA</div>
-    <a href="https://github.com/ethanhung2007">GitHub ↗</a>
-    <a href="#">LinkedIn ↗</a>
-    <div>Sheet 3.2 / 5</div>
-  </footer>
 </div>
 </body>
 </html>
