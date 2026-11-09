@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Ethan Hung</title>
+  <meta name="description" content="Hardware projects by Ethan Hung.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="sheet">
+  <div class="ruler" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html">EH</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <h1 class="page-title">Projects</h1>
+      <p class="lede" style="max-width: 460px">Hardware I’ve designed, verified and measured, newest first.</p>
+    </section>
+
+    <!-- To add a project: copy one <a class="card">…</a> block, then copy a project page. -->
+    <section class="card-grid">
+      <a class="card" href="ethernet-accelerator.html">
+        <div class="slot r-16x9">Photo · Arty A7 setup</div>
+        <div class="card-head"><span class="name">Ethernet packet accelerator</span><span class="num">01</span></div>
+        <p>Receives Ethernet frames from a PC, parses and hashes the payload on an FPGA, and measures latency and throughput. ECE 1100 Discovery Project.</p>
+        <span class="tag">FPGA · Arty A7-100T</span>
+      </a>
+      <a class="card" href="simt-gpu-core.html">
+        <div class="slot r-16x9">Diagram · core block diagram</div>
+        <div class="card-head"><span class="name">SIMT GPU core</span><span class="num">02</span></div>
+        <p>A GPU core built from scratch with its own instruction set.</p>
+        <span class="tag">SystemVerilog</span>
+      </a>
+      <a class="card" href="#">
+        <div class="slot r-16x9">Chart · simulator results</div>
+        <div class="card-head"><span class="name">Compute-in-memory simulator</span><span class="num">03</span></div>
+        <p>An inference simulator for compute-in-memory hardware. Research at NTU.</p>
+        <span class="tag">Research · NTU</span>
+      </a>
+      <a class="card" href="#">
+        <div class="slot r-16x9">Diagram · tile dataflow</div>
+        <div class="card-head"><span class="name">Tiled matmul accelerator</span><span class="num">04</span></div>
+        <p>A memory-centric matrix multiply on FPGA: split-K tiles in BRAM, MAC array, reduction.</p>
+        <span class="tag">FPGA</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>E. Hung · Atlanta, GA</div>
+    <a href="https://github.com/ethanhung2007">GitHub ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <div>Sheet 3 / 5</div>
+  </footer>
+</div>
+</body>
+</html>

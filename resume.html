@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · Ethan Hung</title>
+  <meta name="description" content="Ethan Hung's resume — view or download as PDF.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="sheet">
+  <div class="ruler" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">EH</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects/index.html">Projects</a>
+      <a href="resume.html" aria-current="page">Resume</a>
+      <a href="goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <h1 class="page-title">Resume</h1>
+        <span class="mono muted" style="font-size: 13px">Updated <span class="todo">[Month 2026]</span></span>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="assets/resume.pdf" download>Download PDF ↓</a>
+        <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">Open in new tab ↗</a>
+      </div>
+    </section>
+
+    <!-- Put your resume at assets/resume.pdf. Phones may not show the embed; the buttons above always work. -->
+    <section class="resume-viewer">
+      <iframe src="assets/resume.pdf" title="Ethan Hung resume (PDF)"></iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>E. Hung · Atlanta, GA</div>
+    <a href="https://github.com/ethanhung2007">GitHub ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <div>Sheet 4 / 5</div>
+  </footer>
+</div>
+</body>
+</html>

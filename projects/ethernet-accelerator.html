@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FPGA Ethernet Packet Accelerator · Ethan Hung</title>
+  <meta name="description" content="ECE 1100 Discovery Project: an FPGA that parses and hashes Ethernet packets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="sheet">
+  <div class="ruler" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html">EH</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="index.html" aria-current="page">Projects</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="feature-head">
+      <a class="back" href="index.html">← Projects</a>
+      <h1 class="feature-title">FPGA Ethernet Packet Accelerator</h1>
+      <p class="lede todo" style="font-size: 20px">[One sentence: what it does and the headline result.]</p>
+    </section>
+
+    <section class="spec">
+      <div><span class="label">Course</span><span>ECE 1100</span></div>
+      <div><span class="label">Board</span><span>Arty A7-100T</span></div>
+      <div><span class="label">Link</span><span>100 Mbps Ethernet</span></div>
+      <div><span class="label">Language</span><span class="todo">[HDL]</span></div>
+      <div><span class="label">Code</span><a href="https://github.com/ethanhung2007">GitHub ↗</a></div>
+    </section>
+
+    <!-- Required: at least one photo taken by you. Replace with <img src="../assets/img/ethernet/setup.jpg" alt="..."> -->
+    <div class="slot r-21x9 feature-hero">Your photo · the board wired to your laptop</div>
+
+    <section class="feature-body">
+      <nav class="toc" aria-label="On this page">
+        <a href="#problem"><span>01</span>The Problem</a>
+        <a href="#process"><span>02</span>The Process</a>
+        <a href="#outcome"><span>03</span>The Outcome</a>
+        <a href="#reflection"><span>04</span>Reflection</a>
+      </nav>
+
+      <article class="article">
+        <section id="problem">
+          <h2><span class="num">01</span>The Problem</h2>
+          <p class="todo">[Why moving packet work from software into hardware matters: where latency comes from in a normal network stack, and who cares about it. What question were you trying to answer? ~100 words]</p>
+        </section>
+
+        <section id="process">
+          <h2><span class="num">02</span>The Process</h2>
+          <p class="todo">[How the design came together and the key decisions you made. ~150 words]</p>
+          <figure>
+            <div class="slot r-16x7">Diagram · PC → receive → parse → hash → transmit → PC</div>
+            <figcaption>Fig. 1 · Data path</figcaption>
+          </figure>
+          <div class="steps">
+            <div><span class="n">Step 1</span><span class="t">Receive</span><span class="d todo">[a line]</span></div>
+            <div><span class="n">Step 2</span><span class="t">Parse</span><span class="d todo">[a line]</span></div>
+            <div><span class="n">Step 3</span><span class="t">Hash</span><span class="d todo">[a line]</span></div>
+            <div><span class="n">Step 4</span><span class="t">Send back</span><span class="d todo">[a line]</span></div>
+          </div>
+          <figure>
+            <div class="slot r-16x6">Screenshot · simulation waveform or ILA capture</div>
+            <figcaption>Fig. 2 · <span class="todo">[caption]</span></figcaption>
+          </figure>
+        </section>
+
+        <section id="outcome">
+          <h2><span class="num">03</span>The Outcome</h2>
+          <p class="todo">[What worked, what the numbers mean, how it compares to doing it in software. ~100 words]</p>
+          <div class="stats">
+            <div><span class="v">[ ] µs</span><span class="k">Round-trip latency</span></div>
+            <div><span class="v">[ ] Mbps</span><span class="k">Throughput</span></div>
+            <div><span class="v">[ ] MHz</span><span class="k">Clock</span></div>
+            <div><span class="v">[ ]%</span><span class="k">LUTs used</span></div>
+          </div>
+          <figure>
+            <div class="slot r-16x7">Chart · latency vs. packet size, FPGA vs. software</div>
+            <figcaption>Fig. 3 · <span class="todo">[caption]</span></figcaption>
+          </figure>
+        </section>
+
+        <section id="reflection">
+          <h2><span class="num">04</span>Reflection</h2>
+          <p class="todo">[What you learned, what you’d change, what you’d build next. ~80 words]</p>
+          <!-- Optional video. YouTube: <iframe class="r-16x9" style="width:100%;border:0" src="https://www.youtube.com/embed/VIDEO_ID" title="Demo" allowfullscreen></iframe> -->
+          <div class="slot r-16x9">Optional · demo video</div>
+        </section>
+      </article>
+    </section>
+
+    <a class="next" href="simt-gpu-core.html"><span>Next: SIMT GPU core</span><span class="arrow">→</span></a>
+  </main>
+
+  <footer class="site-footer">
+    <div>E. Hung · Atlanta, GA</div>
+    <a href="https://github.com/ethanhung2007">GitHub ↗</a>
+    <a href="#">LinkedIn ↗</a>
+    <div>Sheet 3.1 / 5</div>
+  </footer>
+</div>
+</body>
+</html>
