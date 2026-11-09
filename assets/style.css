@@ -410,3 +410,23 @@ figcaption { font-family: var(--mono); font-size: 13px; color: var(--muted); mar
 .prose h2 { margin-top: 16px; }
 /* ---------- placeholder text: delete the class once you write it ---------- */
 .todo { color: var(--muted); }
+/* skills grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.skills > div {
+  background: var(--bg);
+  padding: 24px 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skills > div + div { padding-left: 24px; }
+.skills h3 { font-size: 20px; font-weight: 600; }
+.skills p { color: var(--muted); line-height: 1.65; }
+.skills .tags { font-family: var(--mono); font-size: 13px; color: var(--accent); margin-top: auto; padding-top: 6px; }
