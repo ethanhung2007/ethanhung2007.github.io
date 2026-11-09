@@ -400,6 +400,13 @@ figcaption { font-family: var(--mono); font-size: 13px; color: var(--muted); mar
 .timeline .what { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
 .timeline .title { font-size: 19px; }
 .list { padding-left: 20px; font-size: 17px; line-height: 1.9; }
-
+.prose {
+  max-width: 760px;
+  gap: 24px;
+  padding-top: var(--pad-y);
+  padding-bottom: var(--pad-y);
+}
+.prose p { font-size: 18px; line-height: 1.75; }
+.prose h2 { margin-top: 16px; }
 /* ---------- placeholder text: delete the class once you write it ---------- */
 .todo { color: var(--muted); }
