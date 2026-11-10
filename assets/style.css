@@ -159,6 +159,9 @@ h1, h2, h3, p, figure, ul { margin: 0; }
 }
 .slot:has(img) { padding: 0; }
 .slot img { width: 100%; height: 100%; object-fit: cover; }
+.slot.diagram img { object-fit: contain; }
+.slot.diagram.feature-hero img { max-width: 900px; height: auto; }
+.home-photo img { object-position: center 65%; }
 .r-16x9 { aspect-ratio: 16 / 9; }
 .r-16x7 { aspect-ratio: 16 / 7; }
 .r-16x6 { aspect-ratio: 16 / 6; }
