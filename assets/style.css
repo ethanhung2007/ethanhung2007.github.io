@@ -447,3 +447,6 @@ figcaption { font-family: var(--mono); font-size: 13px; color: var(--muted); mar
 .skills h3 { font-size: 20px; font-weight: 600; }
 .skills p { color: var(--muted); line-height: 1.65; }
 .skills .tags { font-family: var(--mono); font-size: 13px; color: var(--accent); margin-top: auto; padding-top: 6px; }
+
+.contact { border-top: 1.5px solid var(--ink); }
+.contact h2 { padding: 24px var(--pad-x) 16px; font-size: 24px; font-weight: 600; }
